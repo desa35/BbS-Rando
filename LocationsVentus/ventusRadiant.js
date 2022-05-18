@@ -1,0 +1,18 @@
+module.exports = [
+  'D72EAE',
+  'D72EB6',
+  'D72EBE',
+  'D72EC6',
+  'D72ECE',
+  'D72ED6',
+  'D72EDE',
+  'D72EE6',
+  'D72EA6',
+  'D72F1E',
+  'D72EEE',
+  'D72EF6',
+  'D72EFE',
+  'D72F06',
+  'D72F16',
+  'D72F0E',
+];
