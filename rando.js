@@ -46,7 +46,7 @@ const adressesFinal = [
   ...adressesV,
   ...terraStickers,
   ...adressesT,
-]
+];
 
 // Combines all rewards that can be obtained from Stickers and sets an array for them for Ventus
 const valuesStickersV = [
@@ -131,14 +131,24 @@ for (let i = 0; i < adressesT.length; i++) {
   randomized.push(element);
 }
 
-let finished = [`function _OnInit()\nend\n\nfunction _OnFrame()\nif ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x00 then`];
+let finished = [
+  `function _OnInit()\nend\n\nfunction _OnFrame()\nif ReadByte(0x${storyModifier
+    .toString(16)
+    .toUpperCase()}) == 0x00 then`,
+];
 // let finished = [];
 for (let i = 0; i < adressesFinal.length; i++) {
   if (i == ventusStickers.length + adressesV.length) {
-    finished.push(`end\nif ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x02 then`);
+    finished.push(
+      `end\nif ReadByte(0x${storyModifier
+        .toString(16)
+        .toUpperCase()}) == 0x02 then`
+    );
   }
   let offsetCalc = parseInt(adressesFinal[i], 16) - parseInt("60E334", 16);
-  finished.push(`WriteInt(0x${offsetCalc.toString(16).toUpperCase()}, ${randomized[i]})`);
+  finished.push(
+    `WriteInt(0x${offsetCalc.toString(16).toUpperCase()}, ${randomized[i]})`
+  );
 }
 finished.push([`end\nend`]);
 
