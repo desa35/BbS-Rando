@@ -37,11 +37,14 @@ const ventusStickers = require("./LocationsVentus/ventusStickers");
 const adressesT = require("./LocationsTerra");
 const terraStickers = require("./LocationsTerra/terraStickers");
 
+// Sets Variable for all 3 Stories' for character checks later on (Offset already subtracted)
+const storyModifier = parseInt("10F9CD00", 16) - parseInt("60E334", 16);
+
 // Joins all the adresses (First Stickers, then Chests)
 const adressesFinal = [
   ...ventusStickers,
-  ...terraStickers,
   ...adressesV,
+  ...terraStickers,
   ...adressesT,
 ]
 
@@ -66,9 +69,34 @@ for (let i = 0; i < ventusStickers.length; i++) {
   randomized.push(element);
 }
 
+// Combines all rewards that remain sets an array for them for Ventus
+const valuesFinalV = [
+  ...valuesStickersVCopy,
+  ...commandsAll,
+  //...icecreamAll,
+  ...itemCommands,
+  ...shotlocksAll,
+  ...actionV,
+  ...commandsV,
+  ...icecreamV,
+  ...shotlocksV,
+];
+const valuesFinalVCopy = valuesFinalV.slice();
+
+// Randomizes all remaining rewards into Chests for Ventus
+for (let i = 0; i < adressesV.length; i++) {
+  let random = Math.floor(Math.random() * valuesFinalVCopy.length);
+  const element = valuesFinalVCopy.splice(random, 1)[0];
+  randomized.push(element);
+}
+
 // Combines all rewards that can be obtained from Stickers and sets an array for them for Terra
 const valuesStickersT = [
-  ...valuesStickersVCopy,
+  // ...ingredientsAll,
+  ...keyitems,
+  ...synthCrystals,
+  // ...synthOreItems,
+  // ...synthRecipes,
   ...ingredientsT,
   ...keybladesT,
   ...stickersT,
@@ -82,36 +110,37 @@ for (let i = 0; i < terraStickers.length; i++) {
   randomized.push(element);
 }
 
-const valuesFinal = [
+// Combines all rewards that remain sets an array for them for Terra
+const valuesFinalT = [
   ...valuesStickersTCopy,
   ...commandsAll,
   //...icecreamAll,
   ...itemCommands,
   ...shotlocksAll,
-  ...actionV,
-  ...commandsV,
-  ...icecreamV,
-  ...shotlocksV,
   ...actionT,
   ...commandsT,
   ...icecreamT,
   ...shotlocksT,
 ];
-const valuesFinalCopy = valuesFinal.slice();
+const valuesFinalTCopy = valuesFinalT.slice();
 
-for (let i = 0; i < valuesFinal.length; i++) {
-  let random = Math.floor(Math.random() * valuesFinalCopy.length);
-  const element = valuesFinalCopy.splice(random, 1)[0];
+// Randomizes all remaining rewards into Chests for Terra
+for (let i = 0; i < adressesT.length; i++) {
+  let random = Math.floor(Math.random() * valuesFinalTCopy.length);
+  const element = valuesFinalTCopy.splice(random, 1)[0];
   randomized.push(element);
 }
 
-let finished = [`function _OnInit()\nend\n\nfunction _OnFrame()`];
+let finished = [`function _OnInit()\nend\n\nfunction _OnFrame()\nif ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x00 then`];
 // let finished = [];
 for (let i = 0; i < adressesFinal.length; i++) {
+  if (i == ventusStickers.length + adressesV.length) {
+    finished.push(`end\nif ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x02 then`);
+  }
   let offsetCalc = parseInt(adressesFinal[i], 16) - parseInt("60E334", 16);
   finished.push(`WriteInt(0x${offsetCalc.toString(16).toUpperCase()}, ${randomized[i]})`);
 }
-finished.push([`end`]);
+finished.push([`end\nend`]);
 
 fs.writeFile("./seed.lua", finished.join("\n"), (err) => {
   if (err) {
