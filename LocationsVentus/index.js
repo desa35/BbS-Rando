@@ -12,7 +12,6 @@ const ventusStickers = require("./ventusStickers");
 const ventusTower = require("./ventusTower");
 
 module.exports = [
-  ...ventusStickers,
   ...ventusCastle,
   ...ventusDisney,
   ...ventusDwarf,
