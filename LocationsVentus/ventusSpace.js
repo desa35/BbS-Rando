@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusSpace = [
   'D72FDE',
   'D72FE6',
   'D72FEE',

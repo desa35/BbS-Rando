@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusGraveyard = [
   'D730FE',
   'D73106',
   'D7310E',

@@ -1,4 +1,4 @@
-module.exports = [
+export const terraEnchanted = [
   "D72A0E",
   "D72A4E",
   "D72A16",

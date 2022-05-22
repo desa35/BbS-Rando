@@ -1,1 +1,1 @@
-module.exports = ["010120", "010129", "01012B"];
+export const shotlocksT = ["010120", "010129", "01012B"];

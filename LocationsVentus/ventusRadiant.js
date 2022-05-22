@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusRadiant = [
   'D72EAE',
   'D72EB6',
   'D72EBE',

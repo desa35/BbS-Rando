@@ -2,7 +2,7 @@
 // Enchanted Dominion (2), Keyblade Graveyard (2), Neverland (2),
 // Olympus (1), Radiant Garden (3), Deep Space (2), Mysterious Tower (1)
 
-module.exports = [
+export const ventusStickers = [
   "D7318E",
   "D731AE",
   "D7316E",

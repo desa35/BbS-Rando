@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaEnchanted = [
   "D72F3E",
   "D72EDE",
   "D72EE6",

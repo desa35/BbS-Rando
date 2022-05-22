@@ -1,4 +1,4 @@
-module.exports = [
+export const keybladesT = [
   "000100",
   "000101",
   "000102",

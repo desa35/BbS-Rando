@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaDisney = [
   "D72FCE",
   "D72FD6",
   "D72FDE",

@@ -1,4 +1,4 @@
-module.exports = [
+export const terraNeverland = [
   "D72CEE",
   "D72CF6",
   "D72CFE",

@@ -1,4 +1,4 @@
-module.exports = [
+export const terraDwarf = [
   "D72A5E",
   "D72A66",
   "D72A6E",

@@ -1,4 +1,4 @@
-module.exports = [
+export const keyitems = [
   "001E00",
   "001E01",
   "001E02",

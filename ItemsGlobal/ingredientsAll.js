@@ -1,4 +1,4 @@
-module.exports = [
+export const ingredientsAll = [
   "004600",
   "004607",
   "004608",

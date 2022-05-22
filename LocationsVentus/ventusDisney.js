@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusDisney = [
   'D72F4E',
   'D72F56',
   'D72F26',

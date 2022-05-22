@@ -1,17 +1,16 @@
 // Calls the Chests and Stickers in Terra's Story and sets variables for them
-const terraCastle = require("./terraCastle");
-const terraDisney = require("./terraDisney");
-const terraDwarf = require("./terraDwarf");
-const terraEnchanted = require("./terraEnchanted");
-const terraGraveyard = require("./terraGraveyard");
-const terraNeverland = require("./terraNeverland");
-const terraOlympus = require("./terraOlympus");
-const terraRadiant = require("./terraRadiant");
-const terraSpace = require("./terraSpace");
-const terraStickers = require("./terraStickers");
-const terraTower = require("./terraTower");
+import { terraCastle } from "./terraCastle.js";
+import { terraDisney } from "./terraDisney.js";
+import { terraDwarf } from "./terraDwarf.js";
+import { terraEnchanted } from "./terraEnchanted.js";
+import { terraGraveyard } from "./terraGraveyard.js";
+import { terraNeverland } from "./terraNeverland.js";
+import { terraOlympus } from "./terraOlympus.js";
+import { terraRadiant } from "./terraRadiant.js";
+import { terraSpace } from "./terraSpace.js";
+import { terraTower } from "./terraTower.js";
 
-module.exports = [
+export const adressesT = [
   ...terraCastle,
   ...terraDisney,
   ...terraDwarf,

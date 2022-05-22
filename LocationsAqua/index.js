@@ -1,18 +1,17 @@
 // Calls the Chests and Stickers in Aqua's Story and sets variables for them
-const aquaCastle = require("./aquaCastle");
-const aquaDarkness = require("./aquaDarkness");
-const aquaDisney = require("./aquaDisney");
-const aquaDwarf = require("./aquaDwarf");
-const aquaEnchanted = require("./aquaEnchanted");
-const aquaGraveyard = require("./aquaGraveyard");
-const aquaNeverland = require("./aquaNeverland");
-const aquaOlympus = require("./aquaOlympus");
-const aquaRadiant = require("./aquaRadiant");
-const aquaSpace = require("./aquaSpace");
-const aquaStickers = require("./aquaStickers");
-const aquaTower = require("./aquaTower");
+import { aquaCastle } from "./aquaCastle.js";
+import { aquaDarkness } from "./aquaDarkness.js";
+import { aquaDisney } from "./aquaDisney.js";
+import { aquaDwarf } from "./aquaDwarf.js";
+import { aquaEnchanted } from "./aquaEnchanted.js";
+import { aquaGraveyard } from "./aquaGraveyard.js";
+import { aquaNeverland } from "./aquaNeverland.js";
+import { aquaOlympus } from "./aquaOlympus.js";
+import { aquaRadiant } from "./aquaRadiant.js";
+import { aquaSpace } from "./aquaSpace.js";
+import { aquaTower } from "./aquaTower.js";
 
-module.exports = [
+export const adressesA = [
   ...aquaCastle,
   ...aquaDarkness,
   ...aquaDisney,

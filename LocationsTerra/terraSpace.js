@@ -1,4 +1,4 @@
-module.exports = [
+export const terraSpace = [
   "D72C4E",
   "D72C86",
   "D72C8E",

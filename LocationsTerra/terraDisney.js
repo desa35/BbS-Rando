@@ -1,4 +1,4 @@
-module.exports = [
+export const terraDisney = [
   "D72BAE",
   "D72BB6",
   "D72BBE",

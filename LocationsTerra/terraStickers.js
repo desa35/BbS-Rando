@@ -2,7 +2,7 @@
 // Enchanted Dominion (3), Keyblade Graveyard (1), Neverland (3),
 // Olympus (1), Radiant Garden (3), Deep Space (2), Mysterious Tower (1)
 
-module.exports = [
+export const terraStickers = [
   "D72976",
   "D7299E",
   "D7292E",

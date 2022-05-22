@@ -1,4 +1,4 @@
-module.exports = [
+export const commandsAll = [
   "01005B",
   "01005C",
   "01005F",

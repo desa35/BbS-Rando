@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaSpace = [
   "D73076",
   "D7309E",
   "D730A6",

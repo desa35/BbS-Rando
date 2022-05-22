@@ -1,4 +1,4 @@
-module.exports = [
+export const commandsV = [
   "010068",
   "010069",
   "01006F",

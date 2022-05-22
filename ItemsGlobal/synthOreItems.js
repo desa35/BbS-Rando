@@ -1,4 +1,4 @@
-module.exports = [
+export const synthOreItems = [
   "003201",
   "003203",
   "003205",

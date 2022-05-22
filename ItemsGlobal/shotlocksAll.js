@@ -1,4 +1,4 @@
-module.exports = [
+export const shotlocksAll = [
   "01011C",
   "01011D",
   "01011E",

@@ -1,4 +1,4 @@
-module.exports = [
+export const actionV = [
   "0100FB",
   "0100FC",
   "010101",

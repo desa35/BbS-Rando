@@ -1,4 +1,4 @@
-module.exports = [
+export const synthRecipes = [
   "001F10",
   "001F11",
   "001F12",

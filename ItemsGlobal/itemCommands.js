@@ -1,4 +1,4 @@
-module.exports = [
+export const itemCommands = [
   "0100BC",
   "0100BD",
   "0100BE",

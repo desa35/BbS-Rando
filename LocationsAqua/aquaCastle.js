@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaCastle = [
   "D72E0E",
   "D72E16",
   "D72E1E",

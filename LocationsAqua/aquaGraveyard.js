@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaGraveyard = [
   "D731A6",
   "D731AE",
   "D731B6",

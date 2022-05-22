@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusNeverland = [
   'D73056',
   'D7305E',
   'D73066',

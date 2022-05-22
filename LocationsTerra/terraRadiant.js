@@ -1,4 +1,4 @@
-module.exports = [
+export const terraRadiant = [
   "D72B56",
   "D72B5E",
   "D72B66",

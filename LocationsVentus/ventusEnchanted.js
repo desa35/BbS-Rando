@@ -1,4 +1,4 @@
-module.exports = [
+export const ventusEnchanted = [
   'D72E16',
   'D72E1E',
   'D72E26',

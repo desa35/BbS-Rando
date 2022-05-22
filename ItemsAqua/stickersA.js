@@ -1,4 +1,4 @@
-module.exports = [
+export const stickersA = [
   "001E54",
   "001E55",
   "001E56",

@@ -1,4 +1,4 @@
-module.exports = [
+export const actionA = [
   "0100FD",
   "0100FE",
   "010105",

@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaRadiant = [
   "D72F56",
   "D72F5E",
   "D72F66",

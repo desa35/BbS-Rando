@@ -1,4 +1,4 @@
-module.exports = [
+export const synthCrystals = [
   "003200",
   "003202",
   "003204",

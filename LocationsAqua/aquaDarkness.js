@@ -1,4 +1,4 @@
-module.exports = [
+export const aquaDarkness = [
   "D731C6",
   "D731D6",
   "D731BE",

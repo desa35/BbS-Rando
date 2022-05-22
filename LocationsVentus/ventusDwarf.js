@@ -1,5 +1,5 @@
-module.exports = [
-  'D72D2E', //Sliding Dash LoD
+export const ventusDwarf = [
+  // 'D72D2E', //Sliding Dash LoD
   'D72D4E',
   'D72D96',
   'D72D8E',

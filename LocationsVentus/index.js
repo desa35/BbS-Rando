@@ -1,17 +1,16 @@
 // Calls the Chests and Stickers in Ventus' Story and sets variables for them
-const ventusCastle = require("./ventusCastle");
-const ventusDisney = require("./ventusDisney");
-const ventusDwarf = require("./ventusDwarf");
-const ventusEnchanted = require("./ventusEnchanted");
-const ventusGraveyard = require("./ventusGraveyard");
-const ventusNeverland = require("./ventusNeverland");
-const ventusOlympus = require("./ventusOlympus");
-const ventusRadiant = require("./ventusRadiant");
-const ventusSpace = require("./ventusSpace");
-const ventusStickers = require("./ventusStickers");
-const ventusTower = require("./ventusTower");
+import { ventusCastle } from "./ventusCastle.js";
+import { ventusDisney } from "./ventusDisney.js";
+import { ventusDwarf } from "./ventusDwarf.js";
+import { ventusEnchanted } from "./ventusEnchanted.js";
+import { ventusGraveyard } from "./ventusGraveyard.js";
+import { ventusNeverland } from "./ventusNeverland.js";
+import { ventusOlympus } from "./ventusOlympus.js";
+import { ventusRadiant } from "./ventusRadiant.js";
+import { ventusSpace } from "./ventusSpace.js";
+import { ventusTower } from "./ventusTower.js";
 
-module.exports = [
+export const adressesV = [
   ...ventusCastle,
   ...ventusDisney,
   ...ventusDwarf,
