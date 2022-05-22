@@ -53,179 +53,196 @@ import { aquaStickers } from "./LocationsAqua/aquaStickers.js";
 // Sets Variable for all 3 Stories' for character checks later on (Offset already subtracted)
 const storyModifier = parseInt("10F9CD00", 16) - parseInt("60E334", 16);
 
-// Joins all the adresses (First Stickers, then Chests)
-const adressesFinal = [
-  ...ventusStickers,
-  ...adressesV,
-  ...terraStickers,
-  ...adressesT,
-  ...aquaStickers,
-  ...adressesA,
-];
+function randomization() {
+  // Joins all the adresses (First Stickers, then Chests)
+  const adressesFinal = [
+    ...ventusStickers,
+    ...adressesV,
+    ...terraStickers,
+    ...adressesT,
+    ...aquaStickers,
+    ...adressesA,
+  ];
 
-// Combines all rewards that can be obtained from Stickers and sets an array for them for Ventus
-const valuesStickersV = [
-  // ...ingredientsAll,
-  ...keyitems,
-  ...synthCrystals,
-  // ...synthOreItems,
-  // ...synthRecipes,
-  // ...ingredientsV,
-  ...keybladesV,
-  ...stickersV,
-];
-const valuesStickersVCopy = valuesStickersV.slice();
+  // Combines all rewards that can be obtained from Stickers and sets an array for them for Ventus
+  const valuesStickersV = [
+    // ...ingredientsAll,
+    ...keyitems,
+    ...synthCrystals,
+    // ...synthOreItems,
+    // ...synthRecipes,
+    // ...ingredientsV,
+    ...keybladesV,
+    ...stickersV,
+  ];
+  const valuesStickersVCopy = valuesStickersV.slice();
 
-// Randomizes the possible rewards for Stickers into the Sticker slots for Ventus
-let randomized = [];
-for (let i = 0; i < ventusStickers.length; i++) {
-  let random = Math.floor(Math.random() * valuesStickersVCopy.length);
-  const element = valuesStickersVCopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes the possible rewards for Stickers into the Sticker slots for Ventus
+  let randomized = [];
+  for (let i = 0; i < ventusStickers.length; i++) {
+    let random = Math.floor(Math.random() * valuesStickersVCopy.length);
+    const element = valuesStickersVCopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-// Combines all rewards that remain sets an array for them for Ventus
-const valuesFinalV = [
-  ...valuesStickersVCopy,
-  ...commandsAll,
-  //...icecreamAll,
-  ...itemCommands,
-  ...shotlocksAll,
-  ...actionV,
-  ...commandsV,
-  ...icecreamV,
-  ...shotlocksV,
-];
-const valuesFinalVCopy = valuesFinalV.slice();
+  // Combines all rewards that remain sets an array for them for Ventus
+  const valuesFinalV = [
+    ...valuesStickersVCopy,
+    ...commandsAll,
+    //...icecreamAll,
+    ...itemCommands,
+    ...shotlocksAll,
+    ...actionV,
+    ...commandsV,
+    ...icecreamV,
+    ...shotlocksV,
+  ];
+  const valuesFinalVCopy = valuesFinalV.slice();
 
-// Randomizes all remaining rewards into Chests for Ventus
-for (let i = 0; i < adressesV.length; i++) {
-  let random = Math.floor(Math.random() * valuesFinalVCopy.length);
-  const element = valuesFinalVCopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes all remaining rewards into Chests for Ventus
+  for (let i = 0; i < adressesV.length; i++) {
+    let random = Math.floor(Math.random() * valuesFinalVCopy.length);
+    const element = valuesFinalVCopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-// Combines all rewards that can be obtained from Stickers and sets an array for them for Terra
-const valuesStickersT = [
-  // ...ingredientsAll,
-  ...keyitems,
-  ...synthCrystals,
-  // ...synthOreItems,
-  // ...synthRecipes,
-  ...ingredientsT,
-  ...keybladesT,
-  ...stickersT,
-];
-const valuesStickersTCopy = valuesStickersT.slice();
+  // Combines all rewards that can be obtained from Stickers and sets an array for them for Terra
+  const valuesStickersT = [
+    // ...ingredientsAll,
+    ...keyitems,
+    ...synthCrystals,
+    // ...synthOreItems,
+    // ...synthRecipes,
+    ...ingredientsT,
+    ...keybladesT,
+    ...stickersT,
+  ];
+  const valuesStickersTCopy = valuesStickersT.slice();
 
-// Randomizes the possible rewards for Stickers into the Sticker slots for Terra
-for (let i = 0; i < terraStickers.length; i++) {
-  let random = Math.floor(Math.random() * valuesStickersTCopy.length);
-  const element = valuesStickersTCopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes the possible rewards for Stickers into the Sticker slots for Terra
+  for (let i = 0; i < terraStickers.length; i++) {
+    let random = Math.floor(Math.random() * valuesStickersTCopy.length);
+    const element = valuesStickersTCopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-// Combines all rewards that remain sets an array for them for Terra
-const valuesFinalT = [
-  ...valuesStickersTCopy,
-  ...commandsAll,
-  //...icecreamAll,
-  ...itemCommands,
-  ...shotlocksAll,
-  ...actionT,
-  ...commandsT,
-  ...icecreamT,
-  ...shotlocksT,
-];
-const valuesFinalTCopy = valuesFinalT.slice();
+  // Combines all rewards that remain sets an array for them for Terra
+  const valuesFinalT = [
+    ...valuesStickersTCopy,
+    ...commandsAll,
+    //...icecreamAll,
+    ...itemCommands,
+    ...shotlocksAll,
+    ...actionT,
+    ...commandsT,
+    ...icecreamT,
+    ...shotlocksT,
+  ];
+  const valuesFinalTCopy = valuesFinalT.slice();
 
-// Randomizes all remaining rewards into Chests for Terra
-for (let i = 0; i < adressesT.length; i++) {
-  let random = Math.floor(Math.random() * valuesFinalTCopy.length);
-  const element = valuesFinalTCopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes all remaining rewards into Chests for Terra
+  for (let i = 0; i < adressesT.length; i++) {
+    let random = Math.floor(Math.random() * valuesFinalTCopy.length);
+    const element = valuesFinalTCopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-// Combines all rewards that can be obtained from Stickers and sets an array for them for Aqua
-const valuesStickersA = [
-  // ...ingredientsAll,
-  ...keyitems,
-  ...synthCrystals,
-  // ...synthOreItems,
-  // ...synthRecipes,
-  // ...ingredientsA,
-  ...keybladesA,
-  ...stickersA,
-];
-const valuesStickersACopy = valuesStickersA.slice();
+  // Combines all rewards that can be obtained from Stickers and sets an array for them for Aqua
+  const valuesStickersA = [
+    // ...ingredientsAll,
+    ...keyitems,
+    ...synthCrystals,
+    // ...synthOreItems,
+    // ...synthRecipes,
+    // ...ingredientsA,
+    ...keybladesA,
+    ...stickersA,
+  ];
+  const valuesStickersACopy = valuesStickersA.slice();
 
-// Randomizes the possible rewards for Stickers into the Sticker slots for Aqua
-for (let i = 0; i < aquaStickers.length; i++) {
-  let random = Math.floor(Math.random() * valuesStickersACopy.length);
-  const element = valuesStickersACopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes the possible rewards for Stickers into the Sticker slots for Aqua
+  for (let i = 0; i < aquaStickers.length; i++) {
+    let random = Math.floor(Math.random() * valuesStickersACopy.length);
+    const element = valuesStickersACopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-// Combines all rewards that remain sets an array for them for Aqua
-const valuesFinalA = [
-  ...valuesStickersACopy,
-  ...commandsAll,
-  //...icecreamAll,
-  ...itemCommands,
-  ...shotlocksAll,
-  ...actionA,
-  ...commandsA,
-  ...icecreamA,
-  ...shotlocksA,
-];
-const valuesFinalACopy = valuesFinalA.slice();
+  // Combines all rewards that remain sets an array for them for Aqua
+  const valuesFinalA = [
+    ...valuesStickersACopy,
+    ...commandsAll,
+    //...icecreamAll,
+    ...itemCommands,
+    ...shotlocksAll,
+    ...actionA,
+    ...commandsA,
+    ...icecreamA,
+    ...shotlocksA,
+  ];
+  const valuesFinalACopy = valuesFinalA.slice();
 
-// Randomizes all remaining rewards into Chests for Aqua
-for (let i = 0; i < adressesA.length; i++) {
-  let random = Math.floor(Math.random() * valuesFinalACopy.length);
-  const element = valuesFinalACopy.splice(random, 1)[0];
-  randomized.push(element);
-}
+  // Randomizes all remaining rewards into Chests for Aqua
+  for (let i = 0; i < adressesA.length; i++) {
+    let random = Math.floor(Math.random() * valuesFinalACopy.length);
+    const element = valuesFinalACopy.splice(random, 1)[0];
+    randomized.push(element);
+  }
 
-let finished = [
-  `function _OnInit()\nend\n\nfunction _OnFrame()
+  let finished = [
+    `function _OnInit()\nend\n\nfunction _OnFrame()
     if ReadByte(0x206D6C) ~= 0xFF or ReadByte(0x206D6D) ~= 0xFF or ReadByte(0x206D6E) ~= 0xFF then
     if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x0D or ReadByte(0x206D6E) ~= 0x00 then
     if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x02 or ReadByte(0x206D6E) ~= 0x00 or ReadShort(0x206D70) ~= 0x01 or ReadShort(0x206D72) ~= 0x00 or ReadShort(0x206D74) ~= 0x01 then
     if ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x00 then`,
-];
-// let finished = [];
-for (let i = 0; i < adressesFinal.length; i++) {
-  if (i == ventusStickers.length + adressesV.length) {
-    finished.push(
-      `end\nend\nend\nend
+  ];
+  // let finished = [];
+  for (let i = 0; i < adressesFinal.length; i++) {
+    if (i == ventusStickers.length + adressesV.length) {
+      finished.push(
+        `end\nend\nend\nend
       if ReadByte(0x206D6C) ~= 0xFF or ReadByte(0x206D6D) ~= 0xFF or ReadByte(0x206D6E) ~= 0xFF then
       if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x0D or ReadByte(0x206D6E) ~= 0x00 then
       if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x02 or ReadByte(0x206D6E) ~= 0x00 or ReadShort(0x206D70) ~= 0x01 or ReadShort(0x206D72) ~= 0x00 or ReadShort(0x206D74) ~= 0x01 then
       if ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x02 then`
-    );
-  } else if (
-    i ==
-    ventusStickers.length +
-      adressesV.length +
-      terraStickers.length +
-      adressesT.length
-  ) {
-    finished.push(
-      `end\nend\nend\nend
+      );
+    } else if (
+      i ==
+      ventusStickers.length +
+        adressesV.length +
+        terraStickers.length +
+        adressesT.length
+    ) {
+      finished.push(
+        `end\nend\nend\nend
       if ReadByte(0x206D6C) ~= 0xFF or ReadByte(0x206D6D) ~= 0xFF or ReadByte(0x206D6E) ~= 0xFF then
       if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x0D or ReadByte(0x206D6E) ~= 0x00 then
       if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x02 or ReadByte(0x206D6E) ~= 0x00 or ReadShort(0x206D70) ~= 0x01 or ReadShort(0x206D72) ~= 0x00 or ReadShort(0x206D74) ~= 0x01 then
       if ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x01 then`
+      );
+    }
+    let offsetCalc = parseInt(adressesFinal[i], 16) - parseInt("60E334", 16);
+    finished.push(
+      `WriteInt(0x${offsetCalc.toString(16).toUpperCase()}, 0x${randomized[i]})`
     );
   }
-  let offsetCalc = parseInt(adressesFinal[i], 16) - parseInt("60E334", 16);
-  finished.push(
-    `WriteInt(0x${offsetCalc.toString(16).toUpperCase()}, 0x${randomized[i]})`
-  );
+  finished.push([`end\nend\nend\nend\nend`]);
+  var textToSave = finished.join("\n");
+
+  var hiddenElement = document.createElement("a");
+
+  hiddenElement.href = "data:attachment/text," + encodeURI(textToSave);
+  hiddenElement.target = "_blank";
+  hiddenElement.download = "seed.lua";
+  hiddenElement.click();
 }
-finished.push([`end\nend\nend\nend\nend`]);
-console.log(finished);
+
+// var element = document.getElementById("click")
+// element.onclick = randomization(); {
+//   console.log(KEKW);
+// }
+
+const click = document.querySelector("#click");
+  click.addEventListener("click", randomization);
 
 // fs.writeFile("./seed.lua", finished.join("\n"), (err) => {
 //   if (err) {
@@ -234,12 +251,3 @@ console.log(finished);
 //   }
 //   //file written successfully
 // });
-
-var textToSave = finished.join("\n");
-
-var hiddenElement = document.createElement("a");
-
-hiddenElement.href = "data:attachment/text," + encodeURI(textToSave);
-hiddenElement.target = "_blank";
-hiddenElement.download = "seed.lua";
-hiddenElement.click();
