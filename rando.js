@@ -1,54 +1,54 @@
-const fs = require("fs");
+// const fs = require("fs");
 
 // Calls the Itemlists that are common across all 3 characters and sets variables for them
-const commandsAll = require("./ItemsGlobal/commandsAll");
-const icecreamAll = require("./ItemsGlobal/icecreamAll");
-const ingredientsAll = require("./ItemsGlobal/ingredientsAll");
-const itemCommands = require("./ItemsGlobal/itemCommands");
-const keyitems = require("./ItemsGlobal/keyitems");
-const shotlocksAll = require("./ItemsGlobal/shotlocksAll");
-const synthCrystals = require("./ItemsGlobal/synthCrystals");
-const synthOreItems = require("./ItemsGlobal/synthOreItems");
-const synthRecipes = require("./ItemsGlobal/synthRecipes");
+import { commandsAll } from "./ItemsGlobal/commandsAll.js";
+import { icecreamAll } from "./ItemsGlobal/icecreamAll.js";
+import { ingredientsAll } from "./ItemsGlobal/ingredientsAll.js";
+import { itemCommands } from "./ItemsGlobal/itemCommands.js";
+import { keyitems } from "./ItemsGlobal/keyitems.js";
+import { shotlocksAll } from "./ItemsGlobal/shotlocksAll.js";
+import { synthCrystals } from "./ItemsGlobal/synthCrystals.js";
+import { synthOreItems } from "./ItemsGlobal/synthOreItems.js";
+import { synthRecipes } from "./ItemsGlobal/synthRecipes.js";
 
 // Calls the Itemlists that are exclusive to Ventus and sets variables for them
-const actionV = require("./ItemsVentus/actionV");
-const commandsV = require("./ItemsVentus/commandsV");
-const icecreamV = require("./ItemsVentus/icecreamV");
-const ingredientsV = require("./ItemsVentus/ingredientsV");
-const keybladesV = require("./ItemsVentus/keybladesV");
-const shotlocksV = require("./ItemsVentus/shotlocksV");
-const stickersV = require("./ItemsVentus/stickersV");
+import { actionV } from "./ItemsVentus/actionV.js";
+import { commandsV } from "./ItemsVentus/commandsV.js";
+import { icecreamV } from "./ItemsVentus/icecreamV.js";
+import { ingredientsV } from "./ItemsVentus/ingredientsV.js";
+import { keybladesV } from "./ItemsVentus/keybladesV.js";
+import { shotlocksV } from "./ItemsVentus/shotlocksV.js";
+import { stickersV } from "./ItemsVentus/stickersV.js";
 
 // Calls the Itemlists that are exclusive to Terra and sets variables for them
-const actionT = require("./ItemsTerra/actionT");
-const commandsT = require("./ItemsTerra/commandsT");
-const icecreamT = require("./ItemsTerra/icecreamT");
-const ingredientsT = require("./ItemsTerra/ingredientsT");
-const keybladesT = require("./ItemsTerra/keybladesT");
-const shotlocksT = require("./ItemsTerra/shotlocksT");
-const stickersT = require("./ItemsTerra/stickersT");
+import { actionT } from "./ItemsTerra/actionT.js";
+import { commandsT } from "./ItemsTerra/commandsT.js";
+import { icecreamT } from "./ItemsTerra/icecreamT.js";
+import { ingredientsT } from "./ItemsTerra/ingredientsT.js";
+import { keybladesT } from "./ItemsTerra/keybladesT.js";
+import { shotlocksT } from "./ItemsTerra/shotlocksT.js";
+import { stickersT } from "./ItemsTerra/stickersT.js";
 
 // Calls the Itemlists that are exclusive to Aqua and sets variables for them
-const actionA = require("./ItemsAqua/actionA");
-const commandsA = require("./ItemsAqua/commandsA");
-const icecreamA = require("./ItemsAqua/icecreamA");
-const ingredientsA = require("./ItemsAqua/ingredientsA");
-const keybladesA = require("./ItemsAqua/keybladesA");
-const shotlocksA = require("./ItemsAqua/shotlocksA");
-const stickersA = require("./ItemsAqua/stickersA");
+import { actionA } from "./ItemsAqua/actionA.js";
+import { commandsA } from "./ItemsAqua/commandsA.js";
+import { icecreamA } from "./ItemsAqua/icecreamA.js";
+import { ingredientsA } from "./ItemsAqua/ingredientsA.js";
+import { keybladesA } from "./ItemsAqua/keybladesA.js";
+import { shotlocksA } from "./ItemsAqua/shotlocksA.js";
+import { stickersA } from "./ItemsAqua/stickersA.js";
 
 // Calls the adresses for the Chests and Stickers from Ventus and sets a variables for them
-const adressesV = require("./LocationsVentus");
-const ventusStickers = require("./LocationsVentus/ventusStickers");
+import { adressesV } from "./LocationsVentus/index.js";
+import { ventusStickers } from "./LocationsVentus/ventusStickers.js";
 
 // Calls the adresses for the Chests and Stickers from Terra and sets a variables for them
-const adressesT = require("./LocationsTerra");
-const terraStickers = require("./LocationsTerra/terraStickers");
+import { adressesT } from "./LocationsTerra/index.js";
+import { terraStickers } from "./LocationsTerra/terraStickers.js";
 
 // Calls the adresses for the Chests and Stickers from Aqua and sets a variables for them
-const adressesA = require("./LocationsAqua");
-const aquaStickers = require("./LocationsAqua/aquaStickers");
+import { adressesA } from "./LocationsAqua/index.js";
+import { aquaStickers } from "./LocationsAqua/aquaStickers.js";
 
 // Sets Variable for all 3 Stories' for character checks later on (Offset already subtracted)
 const storyModifier = parseInt("10F9CD00", 16) - parseInt("60E334", 16);
@@ -225,11 +225,21 @@ for (let i = 0; i < adressesFinal.length; i++) {
   );
 }
 finished.push([`end\nend\nend\nend\nend`]);
+console.log(finished);
 
-fs.writeFile("./seed.lua", finished.join("\n"), (err) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  //file written successfully
-});
+// fs.writeFile("./seed.lua", finished.join("\n"), (err) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   //file written successfully
+// });
+
+var textToSave = finished.join("\n");
+
+var hiddenElement = document.createElement("a");
+
+hiddenElement.href = "data:attachment/text," + encodeURI(textToSave);
+hiddenElement.target = "_blank";
+hiddenElement.download = "seed.lua";
+hiddenElement.click();
