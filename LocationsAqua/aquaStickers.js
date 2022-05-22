@@ -1,0 +1,26 @@
+// Order of Stickers: Caslte of Dreams (2), Disney Town (2), Dwarf Woodlands (2),
+// Enchanted Dominion (2), Keyblade Graveyard (2), Neverland (3),
+// Olympus (1), Radiant Garden (3), Deep Space (2), Mysterious Tower (1)
+
+module.exports = [
+  "D72D6E",
+  "D72DB6",
+  "D72D2E",
+  "D72D36",
+  "D72D86",
+  "D72DBE",
+  "D72D46",
+  "D72D9E",
+  "D72DAE",
+  "D72DC6",
+  "D72D56",
+  "D72D5E",
+  "D72D76",
+  "D72D4E",
+  "D72D8E",
+  "D72D96",
+  "D72DA6",
+  "D72D66",
+  "D72D7E",
+  "D72D3E",
+];
