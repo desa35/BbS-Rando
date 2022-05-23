@@ -70,9 +70,9 @@ if ReadInt(0x206D6B) ~= 0x20100 or ReadInt(0x206D6F) ~= 0x100 or ReadShort(0x206
 if ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x0`;
 
 // Initializes variable for the current weapon check conditional for Ventus, Terra and Aqua (Checks if fighting orbs)
-const weaponCheckV = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x44004400 and ReadShort(0x206D73) == 0x4400 then\nWriteInt(0x`;
-const weaponCheckT = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x3B003B00 and ReadShort(0x206D73) == 0x3B00 then\nWriteInt(0x`;
-const weaponCheckA = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x4B004B00 and ReadShort(0x206D73) == 0x4B00 then\nWriteInt(0x`;
+const weaponCheckV = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x44004400 and ReadShort(0x206D73) == 0x4400 then\nWriteByte(0x`;
+const weaponCheckT = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x3B003B00 and ReadShort(0x206D73) == 0x3B00 then\nWriteByte(0x`;
+const weaponCheckA = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x4B004B00 and ReadShort(0x206D73) == 0x4B00 then\nWriteByte(0x`;
 
 function randomization() {
   // Initializes an array to hold the randomized items
@@ -99,7 +99,7 @@ function randomization() {
   const removedWeaponV = startingWeaponV.splice(randoWeaponV, 1)[0];
   const randomStartingWeaponV = `${weaponCheckV}${currentWeapon
     .toString(16)
-    .toUpperCase()}, 0x${removedWeaponV})\nWriteInt(0x${currentWeaponInMenu
+    .toUpperCase()}, 0x${removedWeaponV})\nWriteShort(0x${currentWeaponInMenu
     .toString(16)
     .toUpperCase()}, 0x${removedWeaponMenuV})\nend`;
   finished.push(randomStartingWeaponV);
@@ -151,7 +151,7 @@ function randomization() {
   const removedWeaponT = startingWeaponT.splice(randoWeaponT, 1)[0];
   const randomStartingWeaponT = `${weaponCheckT}${currentWeapon
     .toString(16)
-    .toUpperCase()}, 0x${removedWeaponT})\nWriteInt(0x${currentWeaponInMenu
+    .toUpperCase()}, 0x${removedWeaponT})\nWriteShort(0x${currentWeaponInMenu
     .toString(16)
     .toUpperCase()}, 0x${removedWeaponMenuT})\nend`;
 
@@ -202,7 +202,7 @@ function randomization() {
   const removedWeaponA = startingWeaponA.splice(randoWeaponA, 1)[0];
   const randomStartingWeaponA = `${weaponCheckA}${currentWeapon
     .toString(16)
-    .toUpperCase()}, 0x${removedWeaponA})\nWriteInt(0x${currentWeaponInMenu
+    .toUpperCase()}, 0x${removedWeaponA})\nWriteShort(0x${currentWeaponInMenu
     .toString(16)
     .toUpperCase()}, 0x${removedWeaponMenuA})\nend`;
 
