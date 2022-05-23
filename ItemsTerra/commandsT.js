@@ -1,16 +1,16 @@
 export const commandsT = [
-  "01005E",
-  "010061",
-  "010063",
-  "010064",
-  "01006E",
-  "01007A",
-  "01007D",
-  "01007E",
-  "010080",
-  "010081",
-  "010086",
-  "0100A5",
-  "0100AD",
-  "0100AF",
+  "01005E", // Meteor Crash
+  "010061", // Dark Haze
+  "010063", // Chaos Blade
+  "010064", // Zantetzuken
+  "01006E", // Ars Solum
+  "01007A", // Brutal Blast
+  "01007D", // Windcutter
+  "01007E", // Limit Storm
+  "010080", // Geo Impact
+  "010081", // Sacrifice
+  "010086", // Dark Firaga
+  "0100A5", // Warp
+  "0100AD", // Quake
+  "0100AF", // Meteor
 ];

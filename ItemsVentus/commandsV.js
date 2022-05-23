@@ -1,10 +1,10 @@
 export const commandsV = [
-  "010068",
-  "010069",
-  "01006F",
-  "010070",
-  "010079",
-  "01007C",
-  "0100A6",
-  "0100AE",
+  "010068", // Spark Raid
+  "010069", // Wind Raid
+  "01006F", // Ars Arcanum
+  "010070", // Time Splicer
+  "010079", // Tornado Strike
+  "01007C", // Salvation
+  "0100A6", // Faith
+  "0100AE", // Tornado
 ];

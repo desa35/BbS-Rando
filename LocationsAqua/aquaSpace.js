@@ -1,16 +1,16 @@
 export const aquaSpace = [
-  "D73076",
-  "D7309E",
-  "D730A6",
-  "D730AE",
-  "D7307E",
-  "D73086",
-  "D7308E",
-  "D73096",
-  "D730D6",
-  "D730DE",
-  "D730B6",
-  "D730C6",
-  "D730CE",
-  "D730BE",
+  "D73076", // Teleport
+  "D7309E", // Blitz
+  "D730A6", // Abounding Crystal
+  "D730AE", // Mega-Potion
+  "D7307E", // Map (Deep Space)
+  "D73086", // Hi-Potion
+  "D7308E", // Ether
+  "D73096", // Balloon Letter
+  "D730D6", // Fire Surge
+  "D730DE", // Prism Rain
+  "D730B6", // Zero Gravira
+  "D730C6", // Hungry Crystal
+  "D730CE", // Mega-Ether
+  "D730BE", // Mega Attack Recipe
 ];

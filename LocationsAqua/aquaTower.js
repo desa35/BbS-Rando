@@ -1,1 +1,6 @@
-export const aquaTower = ["D73166", "D7316E", "D73176", "D7317E"];
+export const aquaTower = [
+    "D73166", // Magnega
+    "D7316E", // Shimmering Crystal
+    "D73176", // Megalixir
+    "D7317E", // Mega Attack Recipe
+];

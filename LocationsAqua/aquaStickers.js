@@ -3,24 +3,24 @@
 // Olympus (1), Radiant Garden (3), Deep Space (2), Mysterious Tower (1)
 
 export const aquaStickers = [
-  "D72D6E",
-  "D72DB6",
-  "D72D2E",
-  "D72D36",
-  "D72D86",
-  "D72DBE",
-  "D72D46",
-  "D72D9E",
-  "D72DAE",
-  "D72DC6",
-  "D72D56",
-  "D72D5E",
-  "D72D76",
-  "D72D4E",
-  "D72D8E",
-  "D72D96",
-  "D72DA6",
-  "D72D66",
-  "D72D7E",
-  "D72D3E",
+  "D72D6E", // Fireworks Sticker
+  "D72DB6", // Bubble Sticker
+  "D72D2E", // Minnie Sticker
+  "D72D36", // Daisy Sticker
+  "D72D86", // Picnic Basket Sticker
+  "D72DBE", // Bubble Sticker
+  "D72D46", // Horace Sticker
+  "D72D9E", // Flower Sticker
+  "D72DAE", // Flower Sticker
+  "D72DC6", // Bubble Sticker
+  "D72D56", // Rainbow Sticker
+  "D72D5E", // Chip Sticker
+  "D72D76", // Fireworks Sticker
+  "D72D4E", // Fireworks Sticker
+  "D72D8E", // Juice Sticker
+  "D72D96", // Donut Sticker
+  "D72DA6", // Flower Sticker
+  "D72D66", // Dale Sticker
+  "D72D7E", // UFO Sticker
+  "D72D3E", // Donald Sticker
 ];

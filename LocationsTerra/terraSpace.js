@@ -1,21 +1,21 @@
 export const terraSpace = [
-  "D72C4E",
-  "D72C86",
-  "D72C8E",
-  "D72C96",
-  "D72CAE",
-  "D72CBE",
-  "D72C56",
-  "D72C5E",
-  "D72C66",
-  "D72C6E",
-  "D72C76",
-  "D72C7E",
-  "D72C9E",
-  "D72CD6",
-  "D72CDE",
-  "D72CB6",
-  "D72CC6",
-  "D72CCE",
-  "D72CA6",
+  "D72C4E", // High Jump
+  "D72C86", // Brutal Blast
+  "D72C8E", // Pulsing Crystal
+  "D72C96", // Mega-Ether
+  "D72CAE", // Mega-Potion
+  "D72CBE", // Map (Deep Space)
+  "D72C56", // Hi-Potion
+  "D72C5E", // Ether
+  "D72C66", // Hi-Potion
+  "D72C6E", // Pulsing Crystal
+  "D72C76", // Warp
+  "D72C7E", // Hi-Potion
+  "D72C9E", // Hungry Crystal
+  "D72CD6", // Mega-Potion
+  "D72CDE", // Fleeting Crystal
+  "D72CB6", // Thundara
+  "D72CC6", // Abounding Crystal
+  "D72CCE", // Wellspring Crystal
+  "D72CA6", // Mine Square
 ];

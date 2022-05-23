@@ -1,15 +1,15 @@
 export const ingredientsV = [
-  "004605",
-  "004606",
-  "00460B",
-  "004613",
-  "004616",
-  "00461D",
-  "00461E",
-  "004624",
-  "00462B",
-  "00462C",
-  "004617",
-  "00461A",
-  "004628",
+  "004605", // Cherryberry
+  "004606", // Apple Pie
+  "00460B", // Jumbo Almond
+  "004613", // Honeybunch
+  "004616", // Star Syrup
+  "00461D", // Merry Diary
+  "00461E", // Moogle Coffee
+  "004624", // Chocolate Valentine
+  "00462B", // Wedding Cake
+  "00462C", // Forest Muffin
+  "004617", // Rainbow Syrup
+  "00461A", // Cream Fluff
+  "004628", // Cotton Cloudcandy
 ];

@@ -1,20 +1,20 @@
 export const ventusDisney = [
-  'D72F4E',
-  'D72F56',
-  'D72F26',
-  'D72F2E',
-  'D72F36',
-  'D72F3E',
-  'D72F46',
-  'D72F5E',
-  'D72F66',
-  'D72F6E',
-  'D72F76',
-  'D72F7E',
-  'D72F96',
-  'D72F86',
-  'D72FAE',
-  'D72F8E',
-  'D72F9E',
-  'D72FA6',
+  'D72F4E', // Map (Disney Town)
+  'D72F56', // Potion
+  'D72F26', // Superglide
+  'D72F2E', // Reversal Slash
+  'D72F36', // Slot Edge
+  'D72F3E', // Shimmering Crystal
+  'D72F46', // Stop
+  'D72F5E', // Mega-Ether
+  'D72F66', // Mega-Potion
+  'D72F6E', // Chaos Crystal
+  'D72F76', // Thunder
+  'D72F7E', // Thunder
+  'D72F96', // Mega-Potion
+  'D72F86', // Panacea
+  'D72FAE', // Action Recipe
+  'D72F8E', // Aerial Slam
+  'D72F9E', // Break Time
+  'D72FA6', // Wellspring Crystal
 ];

@@ -1,23 +1,21 @@
 export const ventusEnchanted = [
-  'D72E16',
-  'D72E1E',
-  'D72E26',
-  'D72E2E',
-  'D72E9E',
-  'D72E0E',
-  'D72E36',
-  'D72E3E',
-  'D72E4E',
-  'D72E5E',
-  'D72E76',
-  'D72E96',
-  'D72E46',
-  'D72E56',
-  'D72E66',
-  'D72E6E',
-  'D72E7E',
-  'D72E86',
-  'D72E8E',
-  'D73186',
-  'D731FE',
+  'D72E16', // Balloon Letter
+  'D72E1E', // Soothing Crystal
+  'D72E26', // Cure
+  'D72E2E', // Wellspring Crystal
+  'D72E9E', // Absolute Zero
+  'D72E0E', // Hi-Potion
+  'D72E36', // Fleeting Crystal
+  'D72E3E', // Tornado Strike
+  'D72E4E', // Wellspring Crystal
+  'D72E5E', // Hungry Crystal
+  'D72E76', // Magnet
+  'D72E96', // Hi-Potion
+  'D72E46', // Ether
+  'D72E56', // Potion
+  'D72E66', // Map (Enchanted Dominion)
+  'D72E6E', // Hi-Potion
+  'D72E7E', // Thunder
+  'D72E86', // Hi-Potion
+  'D72E8E', // Sleep
 ];

@@ -1,18 +1,18 @@
 export const ventusSpace = [
-  'D72FDE',
-  'D72FE6',
-  'D72FEE',
-  'D72FF6',
-  'D72FFE',
-  'D72FD6',
-  'D7300E',
-  'D73046',
-  'D7304E',
-  'D7301E',
-  'D73026',
-  'D73016',
-  'D7302E',
-  'D73036',
-  'D7303E',
-  'D73006',
+  'D72FDE', // Abounding Crystal
+  'D72FE6', // Hi-Potion
+  'D72FEE', // Pulsing Crystal
+  'D72FF6', // Mega-Ether
+  'D72FFE', // Hi-Potion
+  'D72FD6', // Map (Deep Space)
+  'D7300E', // Thundara
+  'D73046', // Zero Gravira
+  'D7304E', // Pulse Bomb
+  'D7301E', // Chaos Crystal
+  'D73026', // Mine Shield
+  'D73016', // Xehanort's Report 1
+  'D7302E', // Mega Attack Recipe
+  'D73036', // Fire Surge
+  'D7303E', // Fleeting Crystal
+  'D73006', // Mega-Potion
 ];

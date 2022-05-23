@@ -1,19 +1,19 @@
 export const aquaDisney = [
-  "D72FCE",
-  "D72FD6",
-  "D72FDE",
-  "D72FE6",
-  "D72FEE",
-  "D72FF6",
-  "D72FFE",
-  "D73006",
-  "D7300E",
-  "D73016",
-  "D73046",
-  "D7302E",
-  "D7301E",
-  "D7304E",
-  "D73026",
-  "D73036",
-  "D7303E",
+  "D72FCE", // Map (Disney Town)
+  "D72FD6", // Potion
+  "D72FDE", // Abouding Crystal
+  "D72FE6", // Fira
+  "D72FEE", // Slot Edge
+  "D72FF6", // Hungry Crystal
+  "D72FFE", // Mega-Potion
+  "D73006", // Chaos Crystal
+  "D7300E", // Thunder
+  "D73016", // Thunder
+  "D73046", // Pulsing Crystal
+  "D7302E", // Mega-Potion
+  "D7301E", // Panacea
+  "D7304E", // Action Recipe
+  "D73026", // Aerial Slam
+  "D73036", // Break Time
+  "D7303E", // Soothing Crystal
 ];

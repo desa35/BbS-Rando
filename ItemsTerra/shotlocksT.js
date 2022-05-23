@@ -1,1 +1,5 @@
-export const shotlocksT = ["010120", "010129", "01012B"];
+export const shotlocksT = [
+  "010120", // Dark Volley
+  "010129", // Sonic Shadow
+  "01012B", // Ultima Cannon
+];

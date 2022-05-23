@@ -1,1 +1,4 @@
-export const shotlocksV = ["010125", "01012A", "01012D"];
+export const shotlocksV = [
+    "010125", // Pulse Bomb
+    "01012D", // Multivortex
+];

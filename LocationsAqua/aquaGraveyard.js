@@ -1,9 +1,9 @@
 export const aquaGraveyard = [
-  "D731A6",
-  "D731AE",
-  "D731B6",
-  "D73186",
-  "D7318E",
-  "D73196",
-  "D7319E",
+  "D731A6", // Elixir
+  "D731AE", // Mega-Potion
+  "D731B6", // Map (Keyblade Graveyard)
+  "D73186", // Aeroga
+  "D7318E", // Mega-Ether
+  "D73196", // Mega-Potion
+  "D7319E", // Megalixir
 ];

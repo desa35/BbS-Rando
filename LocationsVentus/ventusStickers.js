@@ -3,24 +3,24 @@
 // Olympus (1), Radiant Garden (3), Deep Space (2), Mysterious Tower (1)
 
 export const ventusStickers = [
-  "D7318E",
-  "D731AE",
-  "D7316E",
-  "D73176",
-  "D7319E",
-  "D731EE",
-  "D731BE",
-  "D72DF6",
-  "D72DFE",
-  "D731C6",
-  "D731DE",
-  "D73196",
-  "D731A6",
-  "D73206",
-  "D7317E",
-  "D731B6",
-  "D731CE",
-  "D731D6",
-  "D731F6",
-  "D731E6",
+  "D7318E", // Louie Sticker
+  "D731AE", // Fireworks Sticker
+  "D7316E", // Mickey Sticker
+  "D73176", // Minnie Sticker
+  "D7319E", // Chip Sticker
+  "D731EE", // Balloon Sticker
+  "D731BE", // Ice Cream Sticker
+  "D72DF6", // Dewey Sticker
+  "D72DFE", // Confetti Sticker
+  "D731C6", // Ice Cream Sticker
+  "D731DE", // Ice Cream Sticker
+  "D73196", // Rainbow Sticker
+  "D731A6", // Dale Sticker
+  "D73206", // Confetti Sticker
+  "D7317E", // Huey Sticker
+  "D731B6", // Fireworks Sticker
+  "D731CE", // Ice Cream Sticker
+  "D731D6", // Ice Cream Sticker
+  "D731F6", // UFO Sticker
+  "D731E6", // Ice Cream Sticker
 ];

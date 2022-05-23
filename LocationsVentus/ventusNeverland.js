@@ -1,19 +1,19 @@
 export const ventusNeverland = [
-  'D73056',
-  'D7305E',
-  'D73066',
-  'D7306E',
-  'D73076',
-  'D7307E',
-  'D73086',
-  'D7308E',
-  'D73096',
-  'D7309E',
-  'D730A6',
-  'D730D6',
-  'D730AE',
-  'D730B6',
-  'D730BE',
-  'D730C6',
-  'D730CE',
+  'D73056', // Megalixir
+  'D7305E', // Mega-Potion
+  'D73066', // Ether
+  'D7306E', // Hi-Potion
+  'D73076', // Firaga
+  'D7307E', // Treasure Raid
+  'D73086', // Aeroga
+  'D7308E', // Blitz
+  'D73096', // Elixir
+  'D7309E', // Hi-Potion
+  'D730A6', // Panacea
+  'D730D6', // Balloon Letter
+  'D730AE', // Mega-Ether
+  'D730B6', // Fleeting Crystal
+  'D730BE', // Map (Neverland)
+  'D730C6', // Abounding Crystal
+  'D730CE', // Megalixir
 ];

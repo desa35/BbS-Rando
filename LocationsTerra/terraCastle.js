@@ -1,13 +1,13 @@
 export const terraCastle = [
-  "D72B16",
-  "D72AC6",
-  "D72ACE",
-  "D72AD6",
-  "D72B0E",
-  "D72ADE",
-  "D72AE6",
-  "D72AEE",
-  "D72AF6",
-  "D72AFE",
-  "D72B06",
+  "D72B16", // Thunderstorm
+  "D72AC6", // Pulsing Crystal
+  "D72ACE", // Wellspring Crystal
+  "D72AD6", // Slow
+  "D72B0E", // Map (Castle of Dreams)
+  "D72ADE", // Fleeting Crystal
+  "D72AE6", // Strike Raid
+  "D72AEE", // Potion
+  "D72AF6", // Hi-Potion
+  "D72AFE", // Soothing Crystal
+  "D72B06", // Thunder
 ];
