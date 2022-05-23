@@ -64,15 +64,15 @@ const currentWeaponInMenu = parseInt("10FA26DE", 16) - offset;
 const storyModifier = parseInt("10F9CD00", 16) - offset;
 
 // Initializes variable for the character check conditional (Checks if not on Title Screen, Character Selection or pre-Orbs cutscene)
-const characterCheck = `if ReadByte(0x206D6C) ~= 0xFF or ReadByte(0x206D6D) ~= 0xFF or ReadByte(0x206D6E) ~= 0xFF then
-if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x0D or ReadByte(0x206D6E) ~= 0x00 then
-if ReadByte(0x206D6C) ~= 0x01 or ReadByte(0x206D6D) ~= 0x02 or ReadByte(0x206D6E) ~= 0x00 or ReadShort(0x206D70) ~= 0x01 or ReadShort(0x206D72) ~= 0x00 or ReadShort(0x206D74) ~= 0x01 then
+const characterCheck = `if ReadInt(0x206D6B) ~= 0xFFFFFF00 then
+if ReadInt(0x206D6B) ~= 0xD0100 then
+if ReadInt(0x206D6B) ~= 0x20100 or ReadInt(0x206D6F) ~= 0x100 or ReadShort(0x206D73) ~= 0x100 then
 if ReadByte(0x${storyModifier.toString(16).toUpperCase()}) == 0x0`;
 
 // Initializes variable for the current weapon check conditional for Ventus, Terra and Aqua (Checks if fighting orbs)
-const weaponCheckV = `if ReadByte(0x206D6C) == 0x01 and ReadByte(0x206D6D) == 0x02 and ReadByte(0x206D6E) == 0x00 and ReadShort(0x206D70) == 0x44 and ReadShort(0x206D72) == 0x44 and ReadShort(0x206D74) == 0x44 then\nWriteInt(0x`;
-const weaponCheckT = `if ReadByte(0x206D6C) == 0x01 and ReadByte(0x206D6D) == 0x02 and ReadByte(0x206D6E) == 0x00 and ReadShort(0x206D70) == 0x3B and ReadShort(0x206D72) == 0x3B and ReadShort(0x206D74) == 0x3B then\nWriteInt(0x`;
-const weaponCheckA = `if ReadByte(0x206D6C) == 0x01 and ReadByte(0x206D6D) == 0x02 and ReadByte(0x206D6E) == 0x00 and ReadShort(0x206D70) == 0x4B and ReadShort(0x206D72) == 0x4B and ReadShort(0x206D74) == 0x4B then\nWriteInt(0x`;
+const weaponCheckV = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x44004400 and ReadShort(0x206D73) == 0x4400 then\nWriteInt(0x`;
+const weaponCheckT = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x3B003B00 and ReadShort(0x206D73) == 0x3B00 then\nWriteInt(0x`;
+const weaponCheckA = `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x4B004B00 and ReadShort(0x206D73) == 0x4B00 then\nWriteInt(0x`;
 
 function randomization() {
   // Initializes an array to hold the randomized items
@@ -250,7 +250,9 @@ function randomization() {
   // Assigns an adress to every randomized item
   for (let i = 0; i < adressesFinal.length; i++) {
     if (i == ventusStickers.length + adressesV.length) {
-      finished.push(`end\nend\nend\nend\n${characterCheck}2 then\n${randomStartingWeaponT}`);
+      finished.push(
+        `end\nend\nend\nend\n${characterCheck}2 then\n${randomStartingWeaponT}`
+      );
     } else if (
       i ==
       ventusStickers.length +
@@ -258,7 +260,9 @@ function randomization() {
         terraStickers.length +
         adressesT.length
     ) {
-      finished.push(`end\nend\nend\nend\n${characterCheck}1 then\n${randomStartingWeaponA}`);
+      finished.push(
+        `end\nend\nend\nend\n${characterCheck}1 then\n${randomStartingWeaponA}`
+      );
     }
     let offsetCalc = parseInt(adressesFinal[i], 16) - offset;
     finished.push(
