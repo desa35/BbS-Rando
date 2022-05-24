@@ -11,7 +11,6 @@ export const commandsAll = [
   "01006C", // Thunder Surge
   "01006D", // Aerial Slam
   "010071", // Poison Edge
-  "010072", // Wishing Edge
   "010073", // Blizzard Edge
   "010074", // Stun Edge
   "010075", // Slot Edge
