@@ -10,6 +10,6 @@ export const ventusCastle = [
   'D72E06', // Hungry Crystal
   'D72DE6', // Zero Gravity
   'D72DEE', // Balloon Letter
-  'D7318E', // Blizzard
-  'D731AE', // Fleeting Crystal
+  'D72DF6', // Blizzard
+  'D72DFE', // Fleeting Crystal
 ];
