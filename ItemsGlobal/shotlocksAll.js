@@ -1,6 +1,5 @@
 export const shotlocksAll = [
   "01011C", // Meteor Shower
-  "01011D", // Flame Salvo
   "01011E", // Chaos Snake
   "010121", // Ragnarok
   "010122", // Thunderstorm
