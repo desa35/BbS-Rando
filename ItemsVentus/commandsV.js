@@ -1,4 +1,5 @@
 export const commandsV = [
+  "010067", // Treasure Raid
   "010068", // Spark Raid
   "010069", // Wind Raid
   "01006F", // Ars Arcanum

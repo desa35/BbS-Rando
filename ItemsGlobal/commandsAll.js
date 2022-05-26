@@ -6,7 +6,6 @@ export const commandsAll = [
   "010062", // Sonic Blade
   "010065", // Strike Raid
   "010066", // Freeze Raid
-  "010067", // Treasure Raid
   "01006A", // Fire Surge
   "01006C", // Thunder Surge
   "01006D", // Aerial Slam
