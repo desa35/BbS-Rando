@@ -842,18 +842,28 @@ function randomization() {
     if (i < terraCastle.length) {
       let luascript = chestRandom(valuesFinalTerra, adressesTerra, i, "3");
       finished.push(luascript);
-    } else if (i < terraCastle.length + terraDisney.length) {
+    } else if (i < terraCastle.length + terraDeparture.length) {
+      let luascript = chestRandom(valuesFinalTerra, adressesTerra, i, "1");
+      finished.push(luascript);
+    } else if (
+      i <
+      terraCastle.length + terraDeparture.length + terraDisney.length
+    ) {
       let luascript = chestRandom(valuesFinalTerra, adressesTerra, i, "C");
       finished.push(luascript);
     } else if (
       i <
-      terraCastle.length + terraDisney.length + terraDwarf.length
+      terraCastle.length +
+        terraDeparture.length +
+        terraDisney.length +
+        terraDwarf.length
     ) {
       let luascript = chestRandom(valuesFinalTerra, adressesTerra, i, "2");
       finished.push(luascript);
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length
@@ -863,6 +873,7 @@ function randomization() {
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length +
@@ -873,6 +884,7 @@ function randomization() {
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length +
@@ -884,6 +896,7 @@ function randomization() {
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length +
@@ -896,6 +909,7 @@ function randomization() {
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length +
@@ -909,6 +923,7 @@ function randomization() {
     } else if (
       i <
       terraCastle.length +
+        terraDeparture.length +
         terraDisney.length +
         terraDwarf.length +
         terraEnchanted.length +
@@ -1155,15 +1170,31 @@ function randomization() {
     if (i < aquaCastle.length) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "3");
       finished.push(luascript);
-    } else if (i < aquaCastle.length + aquaDisney.length) {
+    } else if (
+      i <
+      aquaCastle.length + aquaDeparture.length
+    ) {
+      let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "1");
+      finished.push(luascript);
+    } else if (
+      i <
+      aquaCastle.length + aquaDeparture.length + aquaDisney.length
+    ) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "C");
       finished.push(luascript);
-    } else if (i < aquaCastle.length + aquaDisney.length + aquaDwarf.length) {
+    } else if (
+      i <
+      aquaCastle.length +
+        aquaDeparture.length +
+        aquaDisney.length +
+        aquaDwarf.length
+    ) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "2");
       finished.push(luascript);
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length
@@ -1173,6 +1204,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length +
@@ -1183,6 +1215,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length +
@@ -1194,6 +1227,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length +
@@ -1206,6 +1240,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length +
@@ -1219,6 +1254,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
         aquaEnchanted.length +
