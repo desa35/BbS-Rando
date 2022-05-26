@@ -123,6 +123,7 @@ import { terraTowerStickers } from "./StickersTerra/terraTower.js";
 import { adressesA as adressesAqua } from "./LocationsAqua/index.js";
 import { aquaCastle } from "./LocationsAqua/aquaCastle.js";
 import { aquaDeparture } from "./LocationsAqua/aquaDeparture.js";
+import { aquaDarkness } from "./LocationsAqua/aquaDarkness.js";
 import { aquaDisney } from "./LocationsAqua/aquaDisney.js";
 import { aquaDwarf } from "./LocationsAqua/aquaDwarf.js";
 import { aquaEnchanted } from "./LocationsAqua/aquaEnchanted.js";
@@ -1170,21 +1171,28 @@ function randomization() {
     if (i < aquaCastle.length) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "3");
       finished.push(luascript);
+    } else if (i < aquaCastle.length + aquaDarkness.length) {
+      let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "7");
+      finished.push(luascript);
     } else if (
       i <
-      aquaCastle.length + aquaDeparture.length
+      aquaCastle.length + aquaDarkness.length + aquaDeparture.length
     ) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "1");
       finished.push(luascript);
     } else if (
       i <
-      aquaCastle.length + aquaDeparture.length + aquaDisney.length
+      aquaCastle.length +
+        aquaDarkness.length +
+        aquaDeparture.length +
+        aquaDisney.length
     ) {
       let luascript = chestRandom(valuesFinalAqua, adressesAqua, i, "C");
       finished.push(luascript);
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length
@@ -1194,6 +1202,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
@@ -1204,6 +1213,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
@@ -1215,6 +1225,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
@@ -1227,6 +1238,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
@@ -1240,6 +1252,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
@@ -1254,6 +1267,7 @@ function randomization() {
     } else if (
       i <
       aquaCastle.length +
+        aquaDarkness.length +
         aquaDeparture.length +
         aquaDisney.length +
         aquaDwarf.length +
