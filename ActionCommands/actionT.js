@@ -1,0 +1,15 @@
+export const actionTerra = [
+  { digit: "00F8", category: "01", name: "Slide", origin: "Terra" },
+  { digit: "0107", category: "01", name: "Sonic Impact", origin: "Terra" },
+  { digit: "0109", category: "01", name: "Block", origin: "Terra" },
+  { digit: "010A", category: "01", name: "Renewal Block", origin: "Terra" },
+  { digit: "010B", category: "01", name: "Focus Block", origin: "Terra" },
+  { digit: "010C", category: "01", name: "Stun Block", origin: "Terra" },
+  { digit: "010D", category: "01", name: "Poison Block", origin: "Terra" },
+  { digit: "0114", category: "01", name: "Counter Hammer", origin: "Terra" },
+  { digit: "0119", category: "01", name: "Payback Fang", origin: "Terra" },
+  { digit: "00FA", category: "01", name: "High Jump", origin: "Terra" },
+  { digit: "00FF", category: "01", name: "Air Slide", origin: "Terra" },
+  { digit: "0100", category: "01", name: "Ice Slide", origin: "Terra" },
+  { digit: "011A", category: "01", name: "Aerial Recovery", origin: "Terra" },
+];

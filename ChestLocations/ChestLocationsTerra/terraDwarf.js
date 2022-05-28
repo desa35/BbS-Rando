@@ -1,0 +1,15 @@
+export const terraDwarf = [
+  { address: "D72A5E", name: "Balloon Letter", prefix: "2" },
+  { address: "D72A66", name: "Ether", prefix: "2" },
+  { address: "D72A6E", name: "Potion", prefix: "2" },
+  { address: "D72A76", name: "Flame Salvo", prefix: "2" },
+  { address: "D72A7E", name: "Potion", prefix: "2" },
+  { address: "D72A86", name: "Block Recipe", prefix: "2" },
+  { address: "D72A8E", name: "Poison Edge", prefix: "2" },
+  { address: "D72AB6", name: "Fire", prefix: "2" },
+  { address: "D72A96", name: "Fission Firaga", prefix: "2" },
+  { address: "D72A9E", name: "Potion", prefix: "2" },
+  { address: "D72AAE", name: "Map (Dwarf Woodlands)", prefix: "2" },
+  { address: "D72ABE", name: "Soothing Crystal", prefix: "2" },
+  { address: "D72AA6", name: "Hungry Crystal", prefix: "2" },
+];

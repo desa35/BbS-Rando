@@ -1,0 +1,16 @@
+export const aquaSpace = [
+  { address: "D73076", name: "Teleport", prefix: "9" },
+  { address: "D7309E", name: "Blitz", prefix: "9" },
+  { address: "D730A6", name: "Abounding Crystal", prefix: "9" },
+  { address: "D730AE", name: "Mega-Potion", prefix: "9" },
+  { address: "D7307E", name: "Map (Deep Space)", prefix: "9" },
+  { address: "D73086", name: "Hi-Potion", prefix: "9" },
+  { address: "D7308E", name: "Ether", prefix: "9" },
+  { address: "D73096", name: "Balloon Letter", prefix: "9" },
+  { address: "D730D6", name: "Fire Surge", prefix: "9" },
+  { address: "D730DE", name: "Prism Rain", prefix: "9" },
+  { address: "D730B6", name: "Zero Gravira", prefix: "9" },
+  { address: "D730C6", name: "Hungry Crystal", prefix: "9" },
+  { address: "D730CE", name: "Mega-Ether", prefix: "9" },
+  { address: "D730BE", name: "Mega Attack Recipe", prefix: "9" },
+];

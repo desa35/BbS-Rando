@@ -1,0 +1,15 @@
+export const ventusCastle = [
+  { address: "D72DA6", name: "Map (Castle of Dreams)", prefix: "3" },
+  { address: "D72DAE", name: "Stund Edge", prefix: "3" },
+  { address: "D72DB6", name: "Magic Recipe", prefix: "3" },
+  { address: "D72DBE", name: "Potion", prefix: "3" },
+  { address: "D72DC6", name: "Thunderstorm", prefix: "3" },
+  { address: "D72DCE", name: "Ether", prefix: "3" },
+  { address: "D72DD6", name: "Pulsing Crystal", prefix: "3" },
+  { address: "D72DDE", name: "Potion", prefix: "3" },
+  { address: "D72E06", name: "Hungry Crystal", prefix: "3" },
+  { address: "D72DE6", name: "Zero Gravity", prefix: "3" },
+  { address: "D72DEE", name: "Balloon Letter", prefix: "3" },
+  { address: "D72DF6", name: "Blizzard", prefix: "3" },
+  { address: "D72DFE", name: "Fleeting Crystal", prefix: "3" },
+];

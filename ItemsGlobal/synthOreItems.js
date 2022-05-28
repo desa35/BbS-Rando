@@ -1,9 +1,9 @@
 export const synthOreItems = [
-  "003201", // Shimmering Ore
-  "003203", // Fleeting Ore
-  "003205", // Pulsing Ore
-  "003207", // Wellspring Ore
-  "003209", // Soothing Ore
-  "00320B", // Hungry Ore
-  "00320D", // Abounding Ore
+  { digit: "3201", category: "00", name: "Shimmering Ore", origin: "Global" },
+  { digit: "3203", category: "00", name: "Fleeting Ore", origin: "Global" },
+  { digit: "3205", category: "00", name: "Pulsing Ore", origin: "Global" },
+  { digit: "3207", category: "00", name: "Wellspring Ore", origin: "Global" },
+  { digit: "3209", category: "00", name: "Soothing Ore", origin: "Global" },
+  { digit: "320B", category: "00", name: "Hungry Ore", origin: "Global" },
+  { digit: "320D", category: "00", name: "Abounding Ore", origin: "Global" },
 ];

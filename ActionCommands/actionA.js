@@ -1,0 +1,18 @@
+export const actionAqua = [
+  { digit: "00FD", category: "01", name: "Cartwheel", origin: "Aqua" },
+  { digit: "00FE", category: "01", name: "Firewheel", origin: "Aqua" },
+  { digit: "0105", category: "01", name: "Homing Slide", origin: "Aqua" },
+  { digit: "0106", category: "01", name: "Teleport", origin: "Aqua" },
+  { digit: "0108", category: "01", name: "Doubleflight", origin: "Aqua" },
+  { digit: "010E", category: "01", name: "Barrier", origin: "Aqua" },
+  { digit: "010F", category: "01", name: "Renewal Barrier", origin: "Aqua" },
+  { digit: "0110", category: "01", name: "Focus Barrier", origin: "Aqua" },
+  { digit: "0111", category: "01", name: "Confuse Barrier", origin: "Aqua" },
+  { digit: "0112", category: "01", name: "Stop Barrier", origin: "Aqua" },
+  { digit: "0116", category: "01", name: "Counter Blast", origin: "Aqua" },
+  { digit: "0118", category: "01", name: "Payback Surge", origin: "Aqua" },
+  { digit: "00FA", category: "01", name: "High Jump", origin: "Aqua" },
+  { digit: "00FF", category: "01", name: "Air Slide", origin: "Aqua" },
+  { digit: "0100", category: "01", name: "Ice Slide", origin: "Aqua" },
+  { digit: "011A", category: "01", name: "Aerial Recovery", origin: "Aqua" },
+];

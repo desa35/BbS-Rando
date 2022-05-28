@@ -1,0 +1,16 @@
+export const ventusDwarf = [
+  { address: "D72D4E", name: "Payback Raid", prefix: "2" },
+  { address: "D72D96", name: "Panacea", prefix: "2" },
+  { address: "D72D8E", name: "Mini", prefix: "2" },
+  { address: "D72D56", name: "Soothing Crystal", prefix: "2" },
+  { address: "D72D5E", name: "Shimmering Crystal", prefix: "2" },
+  { address: "D72D66", name: "Potion", prefix: "2" },
+  { address: "D72D6E", name: "Ether", prefix: "2" },
+  { address: "D72D36", name: "Fire", prefix: "2" },
+  { address: "D72D3E", name: "Poison", prefix: "2" },
+  { address: "D72D46", name: "Map (Dwarf Woodlands)", prefix: "2" },
+  { address: "D72D9E", name: "Attack Recipe", prefix: "2" },
+  { address: "D72D76", name: "Potion", prefix: "2" },
+  { address: "D72D7E", name: "Ether", prefix: "2" },
+  { address: "D72D86", name: "Potion", prefix: "2" },
+];

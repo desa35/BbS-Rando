@@ -1,0 +1,18 @@
+export const terraDisney = [
+  { address: "D72BAE", name: "Map (Disney Town)", prefix: "C" },
+  { address: "D72BB6", name: "Potion", prefix: "C" },
+  { address: "D72BBE", name: "Abounding Crystal", prefix: "C" },
+  { address: "D72BC6", name: "Payback Fang", prefix: "C" },
+  { address: "D72BCE", name: "Slot Edge", prefix: "C" },
+  { address: "D72BD6", name: "Panacea", prefix: "C" },
+  { address: "D72BDE", name: "Action Recipe", prefix: "C" },
+  { address: "D72BE6", name: "Chaos Crystal", prefix: "C" },
+  { address: "D72BEE", name: "Thunder", prefix: "C" },
+  { address: "D72BF6", name: "Thunder", prefix: "C" },
+  { address: "D72C0E", name: "Absolute Zero", prefix: "C" },
+  { address: "D72C26", name: "Mega-Potion", prefix: "C" },
+  { address: "D72BFE", name: "Zero Gravira", prefix: "C" },
+  { address: "D72C06", name: "Aerial Slam", prefix: "C" },
+  { address: "D72C16", name: "Break Time", prefix: "C" },
+  { address: "D72C1E", name: "Chaos Crystal", prefix: "C" },
+];

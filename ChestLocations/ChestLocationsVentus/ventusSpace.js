@@ -1,0 +1,18 @@
+export const ventusSpace = [
+  { address: "D72FDE", name: "Abounding Crystal", prefix: "9" },
+  { address: "D72FE6", name: "Hi-Potion", prefix: "9" },
+  { address: "D72FEE", name: "Pulsing Crystal", prefix: "9" },
+  { address: "D72FF6", name: "Mega-Ether", prefix: "9" },
+  { address: "D72FFE", name: "Hi-Potion", prefix: "9" },
+  { address: "D72FD6", name: "Map (Deep Space)", prefix: "9" },
+  { address: "D7300E", name: "Thundara", prefix: "9" },
+  { address: "D73046", name: "Zero Gravira", prefix: "9" },
+  { address: "D7304E", name: "Pulse Bomb", prefix: "9" },
+  { address: "D7301E", name: "Chaos Crystal", prefix: "9" },
+  { address: "D73026", name: "Mine Shield", prefix: "9" },
+  { address: "D73016", name: "Xehanort's Report 1", prefix: "9" },
+  { address: "D7302E", name: "Mega Attack Recipe", prefix: "9" },
+  { address: "D73036", name: "Fire Surge", prefix: "9" },
+  { address: "D7303E", name: "Fleeting Crystal", prefix: "9" },
+  { address: "D73006", name: "Mega-Potion", prefix: "9" },
+];

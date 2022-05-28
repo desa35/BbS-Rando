@@ -1,0 +1,17 @@
+export const startingWeaponVentus = [
+  { digit: "01", name: "Wayward Wind", origin: "Ventus" },
+  { digit: "04", name: "Treasure Trove", origin: "Ventus" },
+  { digit: "07", name: "Stroke of Midnight", origin: "Ventus" },
+  { digit: "0A", name: "Fairy Stars", origin: "Ventus" },
+  { digit: "0D", name: "Victory Line", origin: "Ventus" },
+  { digit: "10", name: "Mark of a Hero", origin: "Ventus" },
+  { digit: "13", name: "Hyperdrive", origin: "Ventus" },
+  { digit: "16", name: "Pixie Petal", origin: "Ventus" },
+  { digit: "19", name: "Ultima Weapon", origin: "Ventus" },
+  { digit: "1C", name: "Sweetstack", origin: "Ventus" },
+  { digit: "21", name: "Frolic Flame", origin: "Ventus" },
+  { digit: "22", name: "Lost Memory", origin: "Ventus" },
+  { digit: "29", name: "Void Gear", origin: "Ventus" },
+  { digit: "2C", name: "No Name", origin: "Ventus" },
+  { digit: "2F", name: "Royal Radiance", origin: "Ventus" },
+];

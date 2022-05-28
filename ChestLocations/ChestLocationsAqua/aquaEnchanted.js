@@ -1,0 +1,16 @@
+export const aquaEnchanted = [
+  { address: "D72F3E", name: "Map (Enchanted Dominion)", prefix: "4" },
+  { address: "D72EDE", name: "Absolute Zero", prefix: "4" },
+  { address: "D72EE6", name: "Wellspring Crystal", prefix: "4" },
+  { address: "D72EEE", name: "Cure", prefix: "4" },
+  { address: "D72EF6", name: "Pulsing Crystal", prefix: "4" },
+  { address: "D72F46", name: "Sleep", prefix: "4" },
+  { address: "D72EFE", name: "Confusion Strike", prefix: "4" },
+  { address: "D72F06", name: "Hi-Potion", prefix: "4" },
+  { address: "D72F0E", name: "Ice Barrage", prefix: "4" },
+  { address: "D72F16", name: "Hi-Potion", prefix: "4" },
+  { address: "D72F1E", name: "Ether", prefix: "4" },
+  { address: "D72F26", name: "Balloon Letter", prefix: "4" },
+  { address: "D72F2E", name: "Potion", prefix: "4" },
+  { address: "D72F36", name: "Hi-Potion", prefix: "4" },
+];

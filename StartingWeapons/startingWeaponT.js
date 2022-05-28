@@ -1,0 +1,18 @@
+export const startingWeaponTerra = [
+  { digit: "03", name: "Earthshaker", origin: "Terra" },
+  { digit: "06", name: "Treasure Trove", origin: "Terra" },
+  { digit: "09", name: "Stroke of Midnight", origin: "Terra" },
+  { digit: "0C", name: "Fairy Stars", origin: "Terra" },
+  { digit: "0F", name: "Victory Line", origin: "Terra" },
+  { digit: "12", name: "Mark of a Hero", origin: "Terra" },
+  { digit: "15", name: "Hyperdrive", origin: "Terra" },
+  { digit: "18", name: "Pixie Petal", origin: "Terra" },
+  { digit: "1B", name: "Ultima Weapon", origin: "Terra" },
+  { digit: "1E", name: "Sweetstack", origin: "Terra" },
+  { digit: "26", name: "Darkgnaw", origin: "Terra" },
+  { digit: "27", name: "Ends of the Earth", origin: "Terra" },
+  { digit: "28", name: "Chaos Ripper", origin: "Terra" },
+  { digit: "2B", name: "Void Gear", origin: "Terra" },
+  { digit: "2E", name: "No Name", origin: "Terra" },
+  { digit: "31", name: "Royal Radiance", origin: "Terra" },
+];

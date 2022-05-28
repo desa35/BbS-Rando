@@ -1,0 +1,18 @@
+export const keybladesTerra = [
+  { digit: "0100", category: "00", name: "Earthshaker", origin: "Terra" },
+  { digit: "0101", category: "00", name: "Treasure Trove", origin: "Terra" },
+  { digit: "0102", category: "00", name: "Stroke of Midnight", origin: "Terra" },
+  { digit: "0103", category: "00", name: "Fairy Stars", origin: "Terra" },
+  { digit: "0104", category: "00", name: "Victory Line", origin: "Terra" },
+  { digit: "0105", category: "00", name: "Mark of a Hero", origin: "Terra" },
+  { digit: "0106", category: "00", name: "Hyperdrive", origin: "Terra" },
+  { digit: "0107", category: "00", name: "Pixie Petal", origin: "Terra" },
+  { digit: "0108", category: "00", name: "Ultima Weapon", origin: "Terra" },
+  { digit: "0109", category: "00", name: "Sweetstack", origin: "Terra" },
+  { digit: "010A", category: "00", name: "Darkgnaw", origin: "Terra" },
+  { digit: "010B", category: "00", name: "Ends of the Earth", origin: "Terra" },
+  { digit: "010C", category: "00", name: "Chaos Ripper", origin: "Terra" },
+  { digit: "0110", category: "00", name: "Void Gear", origin: "Terra" },
+  { digit: "0111", category: "00", name: "No Name", origin: "Terra" },
+  { digit: "0112", category: "00", name: "Royal Radiance", origin: "Terra" },
+];
