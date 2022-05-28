@@ -95,7 +95,7 @@ const chests = randomChestRewards(chestRewards[i], chestLocations[i])
 
     finished.push(
       characterCheck,
-      battleLevel,
+      // battleLevel,
       randomWeapon,
       cutsceneRewards,
       stickers,
