@@ -1,8 +1,10 @@
 // Imports arrays that are used for randomization
+import { orbsCheck } from "./RandoInitialization/index.js";
 import { startingWeapon } from "../StartingWeapons/index.js";
 import { keyblades } from "./Keyblades/index.js";
 import { commandStyles } from "./CommandStyles/index.js";
 import { dlinks } from "./D-Links/index.js";
+import { dlinkAbilities } from "./D-LinkAbilities/index.js";
 
 import { cutsceneRewardChecks } from "./CutsceneRewards/CutsceneRewardChecks/index.js";
 import { cutsceneRewardsPool } from "./ItemPoolCutsceneRewards/index.js";
@@ -15,35 +17,25 @@ import { stickerLocations } from "./RandomStickerRewards/index.js";
 
 import { initialChestRewards } from "./ItemPoolChestRewards/index.js";
 
+import { dlinkAbilityLocations } from "./D-LinkAbilityLocations/index.js";
+
 // Imports functions that are used for randomization
 import { storyCheck } from "./RandoInitialization/index.js";
 import { randomBattleLevel } from "./RandomBattlelevel/index.js";
 import { randomStartingWeapon } from "./RandomStartingWeapon/index.js";
 import { randomCutsceneRewards } from "./RandomCutsceneRewards/index.js";
 import { randomStickerRewards } from "./RandomStickerRewards/index.js";
-import { chestLocations, randomChestRewards } from "./RandomChestRewards/index.js";
+import {
+  chestLocations,
+  randomChestRewards,
+} from "./RandomChestRewards/index.js";
+import { randomDlinkAbility } from "./RandomD-LinkAbility/index.js";
 
 // Initializes array to hold the character digits used for most functions
 const characterDigit = [
   { character: "Ventus", value: 0 },
   { character: "Aqua", value: 1 },
   { character: "Terra", value: 2 },
-];
-
-// Initializes array for the current weapon check conditional for Ventus, Terra and Aqua (Lua Code checks if Orbs are currently fought)
-const weaponCheck = [
-  {
-    character: "Ventus",
-    value: `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x44004400 and ReadShort(0x206D73) == 0x4400 then\nWriteByte(0x`,
-  },
-  {
-    character: "Aqua",
-    value: `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x4B004B00 and ReadShort(0x206D73) == 0x4B00 then\nWriteByte(0x`,
-  },
-  {
-    character: "Terra",
-    value: `if ReadInt(0x206D6B) == 0x20100 and ReadInt(0x206D6F) == 0x3B003B00 and ReadShort(0x206D73) == 0x3B00 then\nWriteByte(0x`,
-  },
 ];
 
 const stickerRewards = [
@@ -56,7 +48,7 @@ const chestRewards = [
   initialChestRewards[0],
   initialChestRewards[1],
   initialChestRewards[2],
-]
+];
 
 // Assigns functionality to the "Randomization" button on the website
 const click = document.querySelector("#click");
@@ -70,7 +62,7 @@ function randomization() {
     const randomWeapon = randomStartingWeapon(
       startingWeapon[i],
       keyblades[i],
-      weaponCheck[i]
+      orbsCheck[i]
     );
     const cutsceneRewards = randomCutsceneRewards(
       characterDigit[i],
@@ -88,10 +80,20 @@ function randomization() {
 
     const stickers = randomStickerRewards(
       stickerRewards[i],
-      stickerLocations[i]
+      stickerLocations[i],
+      characterDigit[i]
     );
-chestRewards[i].push(...stickerRewards[i]);
-const chests = randomChestRewards(chestRewards[i], chestLocations[i])
+    chestRewards[i].push(...stickerRewards[i]);
+    const chests = randomChestRewards(
+      chestRewards[i],
+      chestLocations[i],
+      characterDigit[i]
+    );
+    const dlinkability = randomDlinkAbility(
+      dlinkAbilities,
+      dlinkAbilityLocations,
+      characterDigit[i]
+    );
 
     finished.push(
       characterCheck,
@@ -100,6 +102,7 @@ const chests = randomChestRewards(chestRewards[i], chestLocations[i])
       cutsceneRewards,
       stickers,
       chests,
+      dlinkability,
       `end\nend\nend\nend`
     );
   }
