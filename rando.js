@@ -62,7 +62,7 @@ function randomization() {
   const finished = [`function _OnInit()\nend\n\nfunction _OnFrame()`];
   for (let i = 0; i < 3; i++) {
     const characterCheck = storyCheck(characterDigit[i]);
-    const battleLevel = randomBattleLevel(characterDigit[i]);
+    // const battleLevel = randomBattleLevel(characterDigit[i]);
     const randomWeapon = randomStartingWeapon(
       startingWeapon[i],
       keyblades[i],
@@ -102,7 +102,7 @@ function randomization() {
 
     finished.push(
       characterCheck,
-      battleLevel,
+      // battleLevel,
       randomWeapon,
       cutsceneRewards,
       stickers,
