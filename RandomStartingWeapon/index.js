@@ -10,7 +10,7 @@ export function randomStartingWeapon(startingWeapon, keyblades, weaponCheck) {
   const randomWeapon = Math.floor(Math.random() * startingWeapon.length);
   const removedWeaponMenu = keyblades.splice(randomWeapon, 1)[0];
   const removedWeapon = startingWeapon.splice(randomWeapon, 1)[0];
-  const randomstartingWeapon = `${weaponCheck.value}${currentWeapon
+  const randomstartingWeapon = `${weaponCheck.value}\nWriteByte(0x${currentWeapon
     .toString(16)
     .toUpperCase()}, 0x${removedWeapon.digit})\nWriteShort(0x${currentWeaponInMenu
     .toString(16)
