@@ -22,7 +22,7 @@ export function randomBattleLevelGenerator(min, max) {
 export function randomBattleLevel(characterDigit) {
   let luascript = [orbsCheck[characterDigit.value].value];
   for (let i = 1; i < 12; i++) {
-    let random = randomBattleLevelGenerator(4, 1);
+    let random = randomBattleLevelGenerator(3, 1);
     let level = battleLevelAddress(i);
     luascript.push(`WriteByte(0x${level}, 0x${random})`);
   }
