@@ -6,17 +6,21 @@ import { commandStyles } from "./CommandStyles/index.js";
 import { dlinks } from "./D-Links/index.js";
 import { dlinkAbilities } from "./D-LinkAbilities/index.js";
 
+// Imports arrays necessary for Cutscene Reward randomization
 import { cutsceneRewardChecks } from "./CutsceneRewards/CutsceneRewardChecks/index.js";
 import { cutsceneRewardsPool } from "./ItemPoolCutsceneRewards/index.js";
-
 import { singleRewards } from "./CutsceneRewards/CutsceneRewardsSingle/index.js";
 import { doubleRewards } from "./CutsceneRewards/CutsceneRewardsDouble/index.js";
 
+// Imports arrays necessary for Sticker Reward randomization
 import { initialStickerRewards } from "./ItemPoolStickerRewards/index.js";
 import { stickerLocations } from "./RandomStickerRewards/index.js";
 
+// Imports arrays necessary for Chest Reward randomization
 import { initialChestRewards } from "./ItemPoolChestRewards/index.js";
+import { chestLocations } from "./RandomChestRewards/index.js";
 
+// Imports array necessary for D-Link Ability randomization
 import { dlinkAbilityLocations } from "./D-LinkAbilityLocations/index.js";
 
 // Imports functions that are used for randomization
@@ -25,10 +29,7 @@ import { randomBattleLevel } from "./RandomBattlelevel/index.js";
 import { randomStartingWeapon } from "./RandomStartingWeapon/index.js";
 import { randomCutsceneRewards } from "./RandomCutsceneRewards/index.js";
 import { randomStickerRewards } from "./RandomStickerRewards/index.js";
-import {
-  chestLocations,
-  randomChestRewards,
-} from "./RandomChestRewards/index.js";
+import { randomChestRewards } from "./RandomChestRewards/index.js";
 import { randomDlinkAbility } from "./RandomD-LinkAbility/index.js";
 
 // Initializes array to hold the character digits used for most functions
@@ -38,12 +39,14 @@ const characterDigit = [
   { character: "Terra", value: 2 },
 ];
 
+// Initializes array to hold valid Sticker Rewards
 const stickerRewards = [
   initialStickerRewards[0],
   initialStickerRewards[1],
   initialStickerRewards[2],
 ];
 
+// Initializes array to hold valid Chest Rewards
 const chestRewards = [
   initialChestRewards[0],
   initialChestRewards[1],
@@ -54,6 +57,7 @@ const chestRewards = [
 const click = document.querySelector("#click");
 click.addEventListener("click", randomization);
 
+// Initializes main function that runs the randomization
 function randomization() {
   const finished = [`function _OnInit()\nend\n\nfunction _OnFrame()`];
   for (let i = 0; i < 3; i++) {
@@ -71,6 +75,7 @@ function randomization() {
       doubleRewards[i],
       cutsceneRewardsPool[i]
     );
+    // Filters rewards that become invalid for future steps out of the Cutscene Reward array
     const filteredCutsceneRewards = cutsceneRewardsPool[i].filter(function (
       number
     ) {
