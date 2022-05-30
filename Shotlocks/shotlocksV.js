@@ -1,5 +1,5 @@
 export const shotlocksVentus = [
-  { digit: "011D", category: "01", name: "Flame Salvo", origin: "Ventus" },
+  // { digit: "011D", category: "01", name: "Flame Salvo", origin: "Ventus" },
   { digit: "0125", category: "01", name: "Pulse Bomb", origin: "Ventus" },
   { digit: "012D", category: "01", name: "Multivortex", origin: "Ventus" },
   { digit: "011C", category: "01", name: "Meteor Shower", origin: "Ventus" },
