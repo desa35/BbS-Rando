@@ -83,8 +83,4 @@ export const commandsVentus = [
   { digit: "00F4", category: "01", name: "Illusion-V", origin: "Ventus" },
   { digit: "00F5", category: "01", name: "Illusion-R", origin: "Ventus" },
   { digit: "00F6", category: "01", name: "Illusion-B", origin: "Ventus" },
-  { digit: "00FA", category: "01", name: "High Jump", origin: "Ventus" },
-  { digit: "00FF", category: "01", name: "Air Slide", origin: "Ventus" },
-  { digit: "0100", category: "01", name: "Ice Slide", origin: "Ventus" },
-  { digit: "011A", category: "01", name: "Aerial Recovery", origin: "Ventus" },
 ];
