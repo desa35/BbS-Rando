@@ -12,19 +12,16 @@ const synthOreItemsTerra = synthOreItems.slice();
 
 export const stickerRewardsVentus = [
   ...synthCrystalsVentus,
-  ...synthOreItemsVentus,
   ...stickers[0],
 ];
 
 export const stickerRewardsAqua = [
   ...synthCrystalsAqua,
-  ...synthOreItemsAqua,
   ...stickers[1],
 ];
 
 export const stickerRewardsTerra = [
   ...synthCrystalsTerra,
-  ...synthOreItemsTerra,
   ...stickers[2],
 ];
 
