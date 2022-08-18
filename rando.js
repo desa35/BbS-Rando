@@ -120,4 +120,5 @@ function randomization() {
   hiddenElement.target = "_blank";
   hiddenElement.download = "seed.lua";
   hiddenElement.click();
+  location.reload();
 }
